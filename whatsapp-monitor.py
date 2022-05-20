@@ -15,7 +15,7 @@ from selenium import webdriver
 import os
 import time
 
-driver = webdriver.Firefox()
+driver = webdriver.Chrome()
 driver.get("http://web.whatsapp.com")
 name = input("Please Enter Name for search online status: ")
 
