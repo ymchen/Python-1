@@ -17,7 +17,7 @@ def binaryread():
         Rname = ch[1]  # due to unpacking the val not printed in list format
         Rmark = ch[2]
 
-        print(Rno, Rname, Rmark, end="\t")
+        print(Rno, Rname, Rmark, end="\n")
 
         B.close
 

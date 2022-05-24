@@ -55,7 +55,7 @@ def firstmark():
         data = i[2]
         main.append(data)
 
-    top = max(main)
+    top = max(main)                   #(max(list) 获取其中的最大值)
     print(top, "is the first mark")
 
     F.seek(0)

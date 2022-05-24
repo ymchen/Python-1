@@ -20,12 +20,12 @@ def update():
         print("Record not found")
 
     else:
-        pickle.dump(value, F)
         F.seek(0)
-        newval = pickle.load(F)
-        print(newval)
-
+        pickle.dump(value, F)
     F.close()
 
-
 update()
+F = open("studrec.dat", "rb")
+val = pickle.load(F)
+print(val)
+F.close()
