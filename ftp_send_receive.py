@@ -10,9 +10,9 @@
 
 from ftplib import FTP
 
-ftp = FTP("xxx.xxx.x.x")  # Enter the ip address or the domain name here
-ftp.login(user="username", passwd="password")
-ftp.cwd("/Enter the directory here/")
+ftp = FTP("192.168.0.51")  # Enter the ip address or the domain name here
+ftp.login(user="root", passwd="VGp6eEA1MQo=")
+ftp.cwd("/home/postgres/user/cym/")
 
 """
 	The file which will be received via the FTP server
@@ -20,7 +20,7 @@ ftp.cwd("/Enter the directory here/")
 """
 
 
-def receive_file(filename="example.txt"):
+def receive_file(filename="test.txt"):
     with open(filename, "wb") as out_file:
         ftp.retrbinary("RETR " + filename, out_file.write, 1024)
         ftp.quit()
@@ -32,7 +32,7 @@ def receive_file(filename="example.txt"):
 """
 
 
-def send_file(filename="example.txt"):
+def send_file(filename="test.txt"):
     with open(filename, "rb") as in_file:
         ftp.storbinary("STOR " + filename, in_file)
         ftp.quit()

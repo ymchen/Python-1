@@ -3,10 +3,10 @@
 # @Author: YiMin-Chan|cyimin@tianjianpro.com
 # @Date:   2022-05-24 09:44:06
 # @version:  1.0.0
-# @filename:  ¶ş½øÖÆÎÄ¼ş¸üĞÂ¼ÇÂ¼
-# @file_path:  D:\ChenYiMin\TJFJ\PYTHON_EXP1\Python-1\1.¶ş½øÖÆÎÄ¼ş\¶ş½øÖÆÎÄ¼ş¸üĞÂ¼ÇÂ¼.py
+# @filename:  äºŒè¿›åˆ¶æ–‡ä»¶æ›´æ–°è®°å½•
+# @file_path:  D:\ChenYiMin\TJFJ\PYTHON_EXP1\Python-1\1.äºŒè¿›åˆ¶æ–‡ä»¶æ“ä½œ\äºŒè¿›åˆ¶æ–‡ä»¶æ›´æ–°è®°å½•.py
 # @Last Modified by:   YiMin-Chan
-# @Last Modified time: 2022-05-24 10:46:40
+# @Last Modified time: 2022-06-01 10:27:53
 # updating records in a bnary file
 
 import pickle
@@ -16,17 +16,17 @@ def update():
     F = open("studrec.dat", "rb+")
     value = pickle.load(F)
     found = 0
-    roll = int(input("ÊäÈë¸üĞÂĞòºÅ:"))
+    roll = int(input("è¾“å…¥æ›´æ–°åºå·:"))
     for i in value:
         if roll == i[0]:
-            print("ĞÕÃû", i[1])
-            print("µÃ·Ö", i[2])
-            i[1] = input("ÊäÈëĞÕÃû")
-            i[2] = int(input("ÊäÈëµÃ·Ö"))
+            print("å§“å", i[1])
+            print("å¾—åˆ†", i[2])
+            i[1] = input("è¾“å…¥å§“å")
+            i[2] = int(input("è¾“å…¥å¾—åˆ†"))
             found = 1
 
     if found == 0:
-        print("¼ÇÂ¼Î´ÕÒµ½!")
+        print("è®°å½•æœªæ‰¾åˆ°!")
 
     else:
         F.seek(0)

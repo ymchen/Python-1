@@ -18,3 +18,20 @@ def lowercase():
 
 if __name__ == "__main__":
     lowercase()
+
+
+select * from tmp_b_bas_company_add;
+
+
+SELECT
+        DISTINCT issue_org_id,
+        thscode,
+        tt.org_name_cn
+    FROM
+        sec_basic_info t
+    LEFT JOIN corp_basic_info tt ON
+        t.issue_org_id = tt.org_id
+    WHERE
+        sec_type = 'A股'
+        AND is_listing = 1
+        and org_name_cn = '观典防务技术股份有限公司'

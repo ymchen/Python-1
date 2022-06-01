@@ -13,7 +13,7 @@ def get_wan_ip():
     try:
         # get ip from http://ipecho.net/plain as text
         wan_ip = urlopen('http://ipecho.net/plain').read().decode('utf-8')
-        res.configure(text='¹«Íø IP  : ' + wan_ip, fg='#600')
+        res.configure(text='å…¬ç½‘ IP  : ' + wan_ip, fg='#600')
     except:
         res.configure(text='Problem in source : http://ipecho.net/plain', fg='red')
 
@@ -22,7 +22,7 @@ def get_wan_ip():
 def get_local_ip():
     try:
         lan_ip = (socket.gethostbyname(socket.gethostname()))
-        res.configure(text='¾ÖÓòÍø IP  : ' + lan_ip, fg='#600')
+        res.configure(text='å±€åŸŸç½‘ IP  : ' + lan_ip, fg='#600')
     except:
         res.configure(text='Unkown Error', fg='#red')
     # **************** about control button *****************#
@@ -40,7 +40,7 @@ def about():
     https://github.com/geekcomputers/Python/blob/master/myip.py
     """, fg='#02F')
     info.grid(row=3, column=0, columnspan=4, padx=5)
-    close_app = Button(root, text='ÍË³ö', command=close_about, bg='#55F')
+    close_app = Button(root, text='é€€å‡º', command=close_about, bg='#55F')
     close_app.grid(row=4, column=0, columnspan=4, pady=5)
 
 
@@ -50,19 +50,19 @@ def close_about():
     info.destroy()
     frame.destroy()
     close_app.destroy()
-    about_app = Button(root, text='¹ØÓÚ', command=about)
+    about_app = Button(root, text='å…³äº', command=about)
     about_app.grid(row=1, column=2, padx=5, pady=5, sticky=W)
 
 
 # **************** Tkinter GUI *****************#
 root = Tk()
-root.title('»ñÈ¡IPµØÖ·')
+root.title('è·å–IPåœ°å€')
 # all buttons
 res = Label(root, text='00.00.00.00', font=25)
-res_wan_ip = Button(root, text='¹«Íø IP', command=get_wan_ip)
-res_local_ip = Button(root, text='¾ÖÓòÍø IP', command=get_local_ip)
-about_app = Button(root, text='¹ØÓÚ', command=about)
-quit_app = Button(root, text='ÍË³ö', command=quit, bg='#f40')
+res_wan_ip = Button(root, text='å…¬ç½‘ IP', command=get_wan_ip)
+res_local_ip = Button(root, text='å±€åŸŸç½‘ IP', command=get_local_ip)
+about_app = Button(root, text='å…³äº', command=about)
+quit_app = Button(root, text='é€€å‡º', command=quit, bg='#f40')
 # method grid to install the button in window
 res.grid(row=0, column=0, columnspan=4, sticky=N, padx=10, pady=5)
 res_wan_ip.grid(row=1, column=0, padx=5, pady=5, sticky=W)

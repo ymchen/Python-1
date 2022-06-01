@@ -4,9 +4,9 @@
 # @Date:   2022-05-24 09:37:24
 # @version:  1.0.0
 # @filename:  二进制文件搜索记录
-# @file_path:  D:\ChenYiMin\TJFJ\PYTHON_EXP1\Python-1\1.二进制文件\二进制文件搜索记录.py
+# @file_path:  D:\ChenYiMin\TJFJ\PYTHON_EXP1\Python-1\1.二进制文件操作\二进制文件搜索记录.py
 # @Last Modified by:   YiMin-Chan
-# @Last Modified time: 2022-05-24 10:44:04
+# @Last Modified time: 2022-06-01 10:28:07
 import pickle
 
 def binary_search():

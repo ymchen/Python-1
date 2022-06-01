@@ -8,7 +8,7 @@ browsers = ["chrome.exe", "firefox.exe", "edge.exe", "iexplore.exe"]
 # find downloads path .
 
 
-path_to_watch = r" "
+path_to_watch = r"C:\Users\YiMin-Chan\Downloads"
 
 
 for browser in browsers:

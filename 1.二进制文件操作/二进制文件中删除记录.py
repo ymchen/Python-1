@@ -4,9 +4,9 @@
 # @Date:   2022-05-23 14:23:02
 # @version:  1.0.0
 # @filename:  二进制文件中删除记录
-# @file_path:  D:\ChenYiMin\TJFJ\PYTHON_EXP1\Python-1\1.二进制文件\二进制文件中删除记录.py
+# @file_path:  D:\ChenYiMin\TJFJ\PYTHON_EXP1\Python-1\1.二进制文件操作\二进制文件中删除记录.py
 # @Last Modified by:   YiMin-Chan
-# @Last Modified time: 2022-05-24 10:43:38
+# @Last Modified time: 2022-06-01 10:28:04
 import pickle
 
 

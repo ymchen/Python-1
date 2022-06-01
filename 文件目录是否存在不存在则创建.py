@@ -6,11 +6,11 @@
 # @filename:  文件目录是否存在不存在则创建
 # @file_path:  D:\ChenYiMin\TJFJ\PYTHON_EXP1\Python-1\文件目录是否存在不存在则创建.py
 # @Last Modified by:   YiMin-Chan
-# @Last Modified time: 2022-05-23 17:13:21
+# @Last Modified time: 2022-05-25 10:14:14
 import os  # Import the OS module
 
 MESSAGE = "The directory already exists."
-TESTDIR = "testdir"
+TESTDIR = "D:\\Userstestdir"
 try:
     home = os.path.expanduser(
         "~"

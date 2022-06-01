@@ -110,10 +110,7 @@ async def download_file_by_url(url, session=None):
 
 def test():
     ways = [
-        "https://www.wikipedia.org",
-        "https://www.ya.ru",
-        "https://www.duckduckgo.com",
-        "https://www.fail-path.unknown",
+        "https://www.ya.ru"
     ]
 
     download(ways)
@@ -121,3 +118,6 @@ def test():
 
 if __name__ == "__main__":
     test()
+
+
+# https://blog.csdn.net/weixin_45316122/article/details/97277234?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1-97277234-blog-93114975.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1-97277234-blog-93114975.pc_relevant_aa&utm_relevant_index=2
